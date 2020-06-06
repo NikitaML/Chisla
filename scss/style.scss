@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #161a1e;
+}
+:root {
+    font-size: 16px;
+}
+body {
+    background: #fafafc;
+    font-family: "SF Pro Display";
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+.container-hf {
+    min-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@import "header";
+@import "links";
+@import "banner";
+@import "menu";
+@import "shop";
+
+@import "footer";
+
+
+@import "error";
+.title {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Literal";
+    align-items: flex-end;
+
+    margin: 20px 0 100px 0;
+}
+.title--left {
+    h2 {
+        font-size: 4.5rem;
+
+        font-style: normal;
+        font-weight: bold;
+        line-height: 72px;
+        color: #443d37;
+    }
+}
+.title--right {
+    p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2rem;
+        line-height: 42px;
+    }
+}
+@media (max-width:1100px){
+    .title{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    .title--left{
+        padding-bottom: 10px;
+        h2{
+            font-size: 3.8rem;
+            line-height: 52px;
+        }
+    }
+    .title--right {
+        p {
+          
+            font-size: 1.6rem;
+            line-height: 32px;
+        }
+    }
+}
+
+
+
+
+@media (max-width:500px){
+    .title--left{
+        padding-bottom:0;
+        h2{
+            font-size: 2.25rem;
+            line-height: 40px;
+        }
+    }
+    .title--right {
+        p {
+          
+            font-size:0.875rem;
+            line-height: 18px;
+        }
+    }
+}
+@media (max-width:320px){
+    .title--left{
+        
+        h2{
+            font-size: 1.875rem;
+            line-height: 40px;
+        }
+    }
+    .title--right {
+        p {
+          
+            font-size:0.875rem;
+            line-height: 18px;
+        }
+    }
+}

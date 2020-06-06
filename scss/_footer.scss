@@ -1,0 +1,144 @@
+.footer {
+    font-family: "Literal";
+}
+
+.footer-top {
+    padding-top: 40px;
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+    }
+
+    &__item-title {
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: bold;
+    }
+
+    &__item-link {
+        padding-top: 20px;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: normal;
+        ul {
+            list-style: none;
+        }
+
+        li + li {
+            padding-top: 15px;
+        }
+
+        a {
+            text-transform: uppercase;
+        }
+    }
+}
+.footer-bottom {
+    &__inner {
+        padding: 40px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+    }
+
+    &__menu {
+        ul {
+            list-style: none;
+            display: flex;
+            li {
+                font-size: 10px;
+                line-height: 13px;
+            }
+            li + li {
+                padding-left: 30px;
+            }
+        }
+    }
+
+    &__copy {
+        font-size: 10px;
+        line-height: 10px;
+    }
+}
+.footer-bottom__copy--mobile{
+    font-size: 10px;
+    line-height: 10px;
+}
+.footer-bottom__inner--mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+@media (max-width: 670px) {
+    .footer-top__item-cont {
+        display: none;
+    }
+}
+@media (max-width: 620px) {
+    .footer-top {
+       
+        &__items {
+            flex-wrap: wrap;
+        }
+        &__item {
+            flex: 0 1 50%;
+            padding-bottom: 40px;
+        }
+    }
+    .footer-bottom__logo{
+        display: none;
+    }
+    .footer-bottom__copy{
+        display: none;
+    }
+    .footer-bottom__inner {
+        padding: 10px 0 20px 0;
+       
+    }
+    .footer-bottom__menu{
+        width: 100%;
+        ul{
+            
+            justify-content: space-between;
+            li + li {
+                padding-left: 19px;
+            }
+        }
+       
+    }
+    .footer-bottom__inner--mobile{
+        display: flex;
+    }
+
+}
+@media (max-width: 365px){
+    .footer-bottom__menu{
+        
+        ul{
+        
+          
+            li + li {
+                padding-left: 10px;
+            }
+        }
+       
+    }
+}
+@media (max-width: 340px){
+    .footer-bottom__menu{
+        
+        display: none;
+       
+    }
+    .footer-bottom__inner {
+        padding: 0;
+       
+    }
+}

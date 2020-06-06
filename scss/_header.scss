@@ -1,0 +1,140 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    background: #fafafc;
+    &__inner {
+        padding: 0 80px;
+        height: 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+   
+}
+
+.list {
+    display: flex;
+    li {
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span {
+                padding-left: 10px;
+                font-size: 1rem;
+                display: none;
+            }
+        }
+    }
+    li + li {
+        padding-left: 39px;
+    }
+}
+
+.header__btn {
+    display: none;
+    width: 23px;
+    height: 11px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    span {
+        transition: all 0.3s ease;
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+
+            width: 65%;
+            height: 3px;
+            background: #161a1e;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: #161a1e;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+    }
+}
+
+.header__btn.header__btn-active {
+    span {
+        &:before {
+            transform: rotate(45deg) translateY(5px);
+            transition: all 0.3s ease;
+        }
+        &:after {
+            transform: rotate(-45deg) translateY(-6px);
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .header {
+        &__inner {
+            padding: 0 20px;
+            height: 55px;
+        }
+    }
+    .logo img {
+        width: 75px;
+        height: 30px;
+    }
+    .header__btn {
+        display: block;
+    }
+    .menu {
+        
+    }
+    
+    
+        .list {
+            display: none;
+            position: absolute;
+            top: 54px;
+            left: 0;
+            text-align: center;
+            width: 100%;
+            background-color: #fafafc;
+            z-index: 99;
+            border-bottom: 1px solid #161a1e;
+            
+                    li + li {
+                        padding-left: 0;
+                    }
+            li {
+                padding: 15px 0;
+                a {
+                    justify-content: center;
+                    align-items: center;
+                     display: flex;
+                    padding: 10px 0;
+                    span {
+                        display: block;
+                    }
+                }
+                &:hover{
+                    background: #ececf0;
+                }
+            }
+            
+        }
+    
+}
+@media (min-width: 1100px) {
+    .list {
+        display: flex !important;
+    }
+}

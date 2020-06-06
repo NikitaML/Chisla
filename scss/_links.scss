@@ -1,0 +1,28 @@
+.links {
+    background-color: transparent;
+    position: fixed;
+    right: 70px;
+    bottom: 45px;
+    z-index: 99;
+    &__items {
+        display: flex;
+    }
+  
+    &__item {
+       
+        a {
+            font-weight: bold;
+            font-size: 10px;
+            line-height: 13px;
+        }
+    }
+    &__item + div {
+        padding-left: 40px;
+    }
+
+}
+@media (max-width:1650px){
+   .links{
+       display: none;
+   }
+}

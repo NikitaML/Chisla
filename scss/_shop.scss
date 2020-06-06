@@ -1,0 +1,408 @@
+.shop {
+    &__title {
+        padding-top: 100px;
+    }
+
+    &__links {
+        width: 100%;
+
+        display: flex;
+        padding-bottom: 120px;
+    }
+
+    &__columns {
+    }
+    &__columns--big {
+        flex: 0 1 50%;
+    }
+    &__columns--small {
+        flex: 0 1 25%;
+    }
+    &__item {
+        width: 100%;
+    }
+    &__item--2 {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.card {
+    width: 100%;
+    height: 460px;
+    position: relative;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: ease 0.5s;
+    }
+    &:hover {
+        img {
+            transform: scale(1.05);
+        }
+    }
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    z-index: 22;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+
+    &__about {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 35px 20px 35px;
+    }
+    &__about--small {
+        padding: 10px 15px 10px 15px;
+    }
+    &__product {
+        display: flex;
+        flex-direction: column;
+        font-family: Literal;
+    }
+
+    &__name {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        color: #ffffff;
+    }
+    &__name--small {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    &__brend {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 300;
+        color: #ffffff;
+    }
+    &__brend--small {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    &__coast {
+        display: flex;
+        align-items: flex-end;
+        span {
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 40px;
+            color: #ffffff;
+        }
+    }
+    &__coast--small {
+        span {
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+}
+
+.ps {
+    position: absolute;
+    z-index: 22;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    font-family: Literal;
+}
+
+.ps-t {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #c7cccf;
+}
+
+.ps-b {
+    margin-top: 5px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.card--small {
+    height: 230px;
+}
+
+@media (max-width: 1100px) {
+    .info {
+        &__about {
+            padding: 20px 25px 20px 25px;
+        }
+        &__about--small {
+            padding: 10px 8px 10px 8px;
+        }
+        &__product {
+        }
+
+        &__name {
+        }
+        &__name--small {
+        }
+        &__brend {
+        }
+        &__brend--small {
+        }
+
+        &__coast {
+            span {
+            }
+        }
+        &__coast--small {
+            span {
+            }
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .shop {
+        &__links {
+            padding: 0 0 60px 0;
+        }
+        &__columns--big {
+            flex: 0 1 40%;
+        }
+        &__columns--small {
+            flex: 0 1 30%;
+        }
+    }
+    .card {
+        height: 360px;
+    }
+    .card--small {
+        height: 180px;
+    }
+
+
+
+
+    .info {
+       
+        &__about {
+           
+            padding: 20px 15px 20px 15px;
+        }
+        &__about--small {
+            padding: 10px 15px 10px 15px;
+        }
+        &__name {
+            font-size: 20px;
+            line-height: 28px; 
+        }
+        &__name--small {
+            font-size: 14px;
+            line-height: 19px;
+        }
+        &__brend {
+            font-size: 20px;
+            line-height: 28px;
+        }
+        &__brend--small {
+            font-size: 14px;
+            line-height: 19px;
+        }
+        &__coast {
+            span {
+                font-size: 20px;
+                line-height: 34px;
+            }
+        }
+        &__coast--small {
+            span {
+                font-size: 14px;
+                line-height: 19px;
+            }
+        }
+
+    }
+
+}
+
+@media (max-width: 920px) {
+    .info {
+        &__about {
+           flex-direction: column;
+        }
+        &__name {
+            font-size: 18px;
+            line-height: 22px;   
+        }
+        &__name--small {
+            font-size: 14px;
+            line-height: 19px;
+        }
+        &__brend {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &__brend--small {
+            font-size: 14px;
+            line-height: 19px;
+        }
+        &__coast {
+            
+            span {
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+        &__coast--small {
+            span {
+                font-size: 14px;
+                line-height: 19px;
+            }
+        }
+
+    }
+}
+@media (max-width: 770px) {
+    .shop {
+        &__links {
+            padding: 0 0 30px 0;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .shop {
+        &__links {
+            flex-wrap: wrap;
+        }
+        &__columns--big {
+            flex: 0 1 60%;
+        }
+        &__columns--small {
+            flex: 0 1 40%;
+        }
+        &__columns-rev {
+            order: 1;
+            flex: 0 1 100%;
+        }
+        &__item--2 {
+            flex-direction: row;
+        }
+    }
+    .card {
+        height: 280px;
+    }
+    .card--small {
+        height: 160px;
+    }
+
+    .ps {
+        
+        top: 10px;
+        
+    }
+    
+    .ps-t {
+        
+        font-size: 16px;
+        line-height: 22px;
+       
+    }
+    
+    .ps-b {
+        
+        font-size: 20px;
+        line-height: 28px;
+    }
+    
+
+}
+
+@media (max-width: 550px) {
+    .card--small {
+        height: 140px;
+    }
+}
+@media (max-width: 450px) {
+    .shop {
+        &__columns--big {
+            flex: 0 1 100%;
+        }
+        &__columns--small {
+            flex: 0 1 50%;
+        }
+        &__columns-rev {
+            flex: 0 1 50%;
+            order: 0;
+        }
+        &__item--2 {
+            flex-direction: column;
+        }
+    }
+
+    .info {
+        &__about {
+           flex-direction: row;
+        }
+        &__about--small {
+            padding: 10px 7px 10px 7px;
+            display: flex;
+            flex-direction: column;
+        }
+        &__name {
+            font-size: 14px;
+            line-height: 18px;   
+        }
+        &__name--small {
+            font-size: 10px;
+            line-height: 14px;
+        }
+        &__brend {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        &__brend--small {
+            font-size: 10px;
+            line-height: 14px;
+        }
+        &__coast {
+            
+            span {
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+        &__coast--small {
+            span {
+                font-size: 10px;
+                line-height: 14px;
+            }
+        }
+
+    }
+}
+@media (max-width: 320px) {
+    .card {
+        height: 230px;
+    }
+    .card--small {
+        height: 115px;
+    }
+     .ps-t {
+        
+        font-size: 14px;
+        line-height: 20px;   
+    }
+    .ps-b {   
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
