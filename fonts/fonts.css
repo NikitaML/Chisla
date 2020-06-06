@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('SFProDisplay-Medium.eot');
+    src: local('SF Pro Display Medium'), local('SFProDisplay-Medium'),
+        url('SFProDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+        url('SFProDisplay-Medium.woff2') format('woff2'),
+        url('SFProDisplay-Medium.woff') format('woff'),
+        url('SFProDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('SFProDisplay-Bold.eot');
+    src: local('SF Pro Display Bold'), local('SFProDisplay-Bold'),
+        url('SFProDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('SFProDisplay-Bold.woff2') format('woff2'),
+        url('SFProDisplay-Bold.woff') format('woff'),
+        url('SFProDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('SFProDisplay-Regular.eot');
+    src: local('SF Pro Display Regular'), local('SFProDisplay-Regular'),
+        url('SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SFProDisplay-Regular.woff2') format('woff2'),
+        url('SFProDisplay-Regular.woff') format('woff'),
+        url('SFProDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FontsFree-Net-SFProText-Bold';
+    src: url('FontsFree-Net-SFProText-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'FontsFree-Net-SFProText-Heavy';
+    src: url('FontsFree-Net-SFProText-Heavy.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'SFProText-Heavy';
+    src: url('SFProText-Heavy.svg#SFProText-Heavy') format('svg'),
+         url('SFProText-Heavy.ttf') format('truetype'),
+         url('SFProText-Heavy.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+  
+  @font-face {
+    font-family: 'SFProText-Bold';
+    src: url('SFProText-Bold.svg#SFProText-Bold') format('svg'),
+         url('SFProText-Bold.ttf') format('truetype'),
+         url('SFProText-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+@font-face {
+    font-family: 'Literal';
+    src: url('fonts/Literal-Bold.eot');
+    src: url('fonts/Literal-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Literal-Bold.woff2') format('woff2'),
+        url('fonts/Literal-Bold.woff') format('woff'),
+        url('fonts/Literal-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Literal';
+    src: url('fonts/Literal-Light.eot');
+    src: url('fonts/Literal-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Literal-Light.woff2') format('woff2'),
+        url('fonts/Literal-Light.woff') format('woff'),
+        url('fonts/Literal-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Literal';
+    src: url('fonts/Literal-Regular.eot');
+    src: url('fonts/Literal-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Literal-Regular.woff2') format('woff2'),
+        url('fonts/Literal-Regular.woff') format('woff'),
+        url('fonts/Literal-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
